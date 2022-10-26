@@ -10,7 +10,7 @@ while(True):
         roi_gray = gray[y:y+h, x:x+w]
         roi_color = frame[y:y+h , x:x+w]
         print('Fire is detected')
-        playsound('C:\\Users\\Jouna\\OneDrive\\سطح المكتب\\python\\مشاريع AI\\fire detection\\audio.mp3')
+        playsound('audio.mp3')
     cv2.imshow('camera detected the fire if hapend', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
